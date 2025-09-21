@@ -11,7 +11,6 @@ import { CallTrigger } from "@/components/call-trigger"
 import { TranscriptViewer } from "@/components/transcript-viewer"
 import { RecentCalls } from "@/components/recent-calls"
 import { AIPerformance } from "@/components/ai-performance"
-import { UserProfile } from "@/components/auth/user-profile"
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState("overview")
@@ -50,7 +49,6 @@ export default function Dashboard() {
                 {isLive ? <Pause className="w-4 h-4 mr-2" /> : <Play className="w-4 h-4 mr-2" />}
                 {isLive ? "Pause" : "Resume"}
               </Button>
-              <UserProfile />
             </div>
           </div>
         </div>
